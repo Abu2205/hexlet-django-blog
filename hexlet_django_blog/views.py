@@ -18,3 +18,9 @@ def index(request):
             "who": "World",
         },
     )
+
+def index(request):
+    context = {
+        'app_name': 'Article'
+    }
+    return render(request, "articles/index.html", context)
